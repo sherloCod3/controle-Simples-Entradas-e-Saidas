@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Controle Financeiro</title>
+
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<main>
+		<div class="resume">
+			<div>
+				Entradas: R$
+				<span class="incomes">0.00</span>
+			</div>
+			<div>
+				Saídas: R$
+				<span class="expenses">0.00</span>
+			</div>
+			<div>
+				Total: R$
+				<span class="total">0.00</span>
+			</div>
+		</div>
+		<div class="newItem">
+			<div class="divDesc">
+				<label for="desc">Descrição</label>
+				<input type="text" id="desc" name="descricão">
+			</div>
+			<div class="divAmount">
+				<label for="amount">Valor</label>
+				<input type="number" id="amount" name="valor">
+			</div>
+			<div class="divType">
+				<label for="type">Tipo</label>
+				<select id="type">
+					<option>Entrada</option>
+					<option>Saída</option>
+				</select>
+			</div>
+			<button id="btnNew">Incluir</button>
+		</div>
+			<div class="divTable">
+				<table>
+					<thead>
+						<tr>
+							<th>Descrição</th>
+							<th class="columnAmount">Valor</th>
+							<th class="columnType">Tipo</th>
+							<th class="columnAction"></th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+	</main>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
